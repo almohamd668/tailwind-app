@@ -4,6 +4,7 @@ function Header() {
   const [Links] = useState(["Features", "Team", "SignIn"]); 
   const headerRef = useRef();
   useEffect(() => {
+    
     window.addEventListener("scroll", () => { 
       if (window.scrollY > 100) {
         headerRef.current.style.background = "#0c1524";
@@ -14,11 +15,12 @@ function Header() {
       }
      })
   }, []);
+
   return(
     <header ref={headerRef} className=" pt-[60px] fixed top-0 left-0 w-full z-50 transition-all duration-200">
      <div className="flex justify-between  container mx-auto px-[30px] gap-[30px] sm:gap-0 flex-col sm:flex-row">
        <a href="/dist">
-         <img src="../assets/images/logo.svg" alt="logo" />
+         <img src="../assets/imgs/bg-quotes.png" alt="logo" />
        </a>
        <nav>
          <ul className="flex items-center  gap-[50px] ">
