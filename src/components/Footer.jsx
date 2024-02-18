@@ -1,10 +1,5 @@
-
 function Footer() {
-  return (
-    <div>
-      <img src="../assets/imgs/icon-access-anywhere.svg" alt="logo" />
-    </div>
-  )
+  return <></>;
 }
 
-export default Footer
+export default Footer;

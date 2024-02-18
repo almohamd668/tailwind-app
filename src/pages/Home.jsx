@@ -1,11 +1,15 @@
+import StayProductive from "../components/StayProductive";
+import Landing from "../components/landing";
+import Features from "./../components/Features";
 
 function Home() {
   return (
-    <div>
-        
-      
-    </div>
-  )
+    <>
+      <Landing />
+      <Features />
+      <StayProductive />
+    </>
+  );
 }
 
-export default Home
+export default Home;
