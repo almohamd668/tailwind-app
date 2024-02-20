@@ -3,10 +3,10 @@ import arrow from "../assets/imgs/icon-arrow.svg";
 
 const StayProductive = () => {
   return (
-    <section>
+    <section className="pb-[200px]">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[30px] place-items-center ">
-          <div className="w-[500px] ">
+          <div className="w-[500px] max-w-full">
             <img src={intro} alt="illustration-intro" />
           </div>
           <div className="md:mt-[60px] text-white">
@@ -29,13 +29,16 @@ const StayProductive = () => {
             </div>
             <a
               href="/"
-              className="text-primary  hover:text-[#42b0d1] border-b-2 border-primary border-solid pb-[5px] w-fit flex items-center gap-[15px] transition-colors duration-200 "
+              className="text-primary  hover:text-[#42b0d1] border-b-2
+               border-primary border-solid pb-[5px] w-fit flex
+                items-center gap-[15px] transition-colors duration-200"
             >
               see how Fylo works
               <img
                 src={arrow}
                 alt="icon-arrow-svg"
-                className="animate-[moveRight_1s_ease-in-out_infinite] w-[20px] h-[20px] object-contain"
+                className="animate-[moveRight_1s_ease-in-out_infinite]
+                 w-[20px] h-[20px] object-contain"
               />
             </a>
           </div>
